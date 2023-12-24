@@ -1,7 +1,8 @@
 import { join } from 'path'
 import type { Config } from 'tailwindcss'
 import { skeleton } from '@skeletonlabs/tw-plugin'
-import { theme } from './src/theme'
+import { firstTheme } from './src/firstTheme'
+import { lighterTheme } from './src/lighterTheme';
 
 export default {
 	darkMode: 'class',
@@ -13,7 +14,8 @@ export default {
 		skeleton({
 			themes: {
 				custom: [
-					theme
+					firstTheme,
+					lighterTheme
 				]
 			},
 		}),
