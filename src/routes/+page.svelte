@@ -6,7 +6,7 @@
 	<div class="space-y-10 text-center flex flex-col items-center">
 		<h2 class="h2">Will you be my Valentine?</h2>
 
-			<img src="{bearsPaintingNails}" alt="two bears painting eachothers nails">
+		<img src="{bearsPaintingNails}" alt="two bears painting eachothers nails">
 
 		<section class="flex flex-row space-between">
 			<div>
