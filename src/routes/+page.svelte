@@ -3,18 +3,16 @@
 </script>
 
 <div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-10 text-center flex flex-col items-center">
+	<div class="space-y-10 text-center flex flex-col">
 		<h2 class="h2">Will you be my Valentine?</h2>
 
-		<img src="{bearsPaintingNails}" alt="two bears painting eachothers nails">
+		<img src="{bearsPaintingNails}" alt="two bears painting each-other's nails">
 
-		<section class="flex flex-row space-between">
+		<div class="button-container">
 			<div>
 				<a
 					class="btn variant-filled"
 					href="https://skeleton.dev/"
-					target="_blank"
-					rel="noreferrer"
 				>
 					Yes
 				</a>
@@ -23,16 +21,18 @@
 				<a
 					class="btn variant-filled"
 					href="https://skeleton.dev/"
-					target="_blank"
-					rel="noreferrer"
 				>
 					No
 				</a>
 			</div>
-		</section>
+		</div>
 	</div>
 </div>
 
 <style lang="postcss">
-
+	.button-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+	}
 </style>
