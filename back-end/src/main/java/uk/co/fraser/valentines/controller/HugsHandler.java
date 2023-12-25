@@ -19,7 +19,11 @@ public class HugsHandler extends AbstractWebSocketHandler {
 
     @Override
     public void handleMessage(final WebSocketSession session, final WebSocketMessage<?> message) throws Exception {
-        session.sendMessage(message);
+        final HugsPayload hugsPayload = objectMapper.readValue(((String) message.getPayload()), HugsPayload.class);
+
+        if (hugsPayload.isValid()) {
+            session.sendMessage(message);
+        }
 
         super.handleMessage(session, message);
     }
