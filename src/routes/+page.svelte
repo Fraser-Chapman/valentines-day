@@ -12,7 +12,7 @@
 			<div>
 				<a
 					class="btn variant-filled"
-					href="https://skeleton.dev/"
+					href="/yes"
 				>
 					Yes
 				</a>
