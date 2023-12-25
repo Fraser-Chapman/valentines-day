@@ -20,7 +20,7 @@
 			<div>
 				<a
 					class="btn variant-filled"
-					href="https://skeleton.dev/"
+					href="/no"
 				>
 					No
 				</a>
