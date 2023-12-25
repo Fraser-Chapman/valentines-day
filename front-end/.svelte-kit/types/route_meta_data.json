@@ -1,0 +1,12 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/no": [
+		"src/routes/+layout.ts"
+	],
+	"/yes": [
+		"src/routes/+layout.ts"
+	]
+}
