@@ -1,5 +1,23 @@
-<script>
+<script lang="ts">
 	import bearsPaintingNails from '$lib/assets/bears-painting-nails.png';
+	import { browser } from '$app/environment';
+
+	const buttonWidth: number = 60.72;
+	const buttonHeight: number = 42;
+
+	if (browser) {
+		const maxWidth: number = window.innerWidth - buttonWidth;
+		const maxHeight: number = window.innerHeight - buttonHeight;
+
+		const noButton = document.getElementById('no-button') as HTMLButtonElement
+
+		noButton.addEventListener('mouseover', () => {
+			noButton.style.position = 'absolute'
+			noButton.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
+			noButton.style.top = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
+		});
+	}
+
 </script>
 
 <div class="container h-full mx-auto flex justify-center items-center">
@@ -17,7 +35,7 @@
 					Yes
 				</a>
 			</div>
-			<div>
+			<div id="no-button">
 				<a
 					class="btn variant-filled"
 					href="/no"
@@ -30,9 +48,9 @@
 </div>
 
 <style lang="postcss">
-	.button-container {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-	}
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 </style>
