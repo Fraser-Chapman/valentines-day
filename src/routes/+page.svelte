@@ -5,16 +5,26 @@
 	const buttonWidth: number = 60.72;
 	const buttonHeight: number = 42;
 
+	let noButtonText = 'No'
+
 	if (browser) {
+		let attempts: number = 0;
 		const maxWidth: number = window.innerWidth - buttonWidth;
 		const maxHeight: number = window.innerHeight - buttonHeight;
 
 		const noButton = document.getElementById('no-button') as HTMLButtonElement
 
 		noButton.addEventListener('mouseover', () => {
-			noButton.style.position = 'absolute'
-			noButton.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
-			noButton.style.top = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
+			console.log(noButton.style.position)
+			if (attempts > 2) {
+				noButton.style.position = '';
+				noButtonText = 'Really? :('
+			} else {
+				noButton.style.position = 'absolute'
+				noButton.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
+				noButton.style.top = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
+				attempts++
+			}
 		});
 	}
 
@@ -40,7 +50,7 @@
 					class="btn variant-filled"
 					href="/no"
 				>
-					No
+					{noButtonText}
 				</a>
 			</div>
 		</div>
