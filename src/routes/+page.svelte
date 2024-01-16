@@ -14,17 +14,19 @@
 
 		const noButton = document.getElementById('no-button') as HTMLButtonElement
 
-		noButton.addEventListener('mouseover', () => {
-			if (attempts > 2) {
-				noButton.style.position = '';
-				noButtonText = 'Really? :('
-			} else {
-				noButton.style.position = 'absolute'
-				noButton.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
-				noButton.style.top = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
-				attempts++
-			}
-		});
+		if (noButton) {
+			noButton.addEventListener('mouseover', () => {
+				if (attempts > 2) {
+					noButton.style.position = '';
+					noButtonText = 'Really? :('
+				} else {
+					noButton.style.position = 'absolute'
+					noButton.style.left = Math.floor(Math.random() * (maxWidth + 1)) + 'px';
+					noButton.style.top = Math.floor(Math.random() * (maxHeight + 1)) + 'px';
+					attempts++
+				}
+			});
+		}
 	}
 
 </script>
