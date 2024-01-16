@@ -15,7 +15,6 @@
 		const noButton = document.getElementById('no-button') as HTMLButtonElement
 
 		noButton.addEventListener('mouseover', () => {
-			console.log(noButton.style.position)
 			if (attempts > 2) {
 				noButton.style.position = '';
 				noButtonText = 'Really? :('
