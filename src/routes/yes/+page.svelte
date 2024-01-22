@@ -8,6 +8,21 @@
 
 		<img src="{bearsHugging}" alt="A bear blowing a kiss">
 
+		<div>
+			<h3 class="h3">Agenda:</h3>
+			<ul>
+				<li>
+					- 14:30 Mini Golf @ Urban Playground
+				</li>
+				<li>
+					- 17:30 Maki & Ramen
+				</li>
+				<li>
+					- Finish @ CloudWater Brewery
+				</li>
+			</ul>
+		</div>
+
 	</div>
 </div>
 
