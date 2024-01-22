@@ -1,6 +1,7 @@
 <script lang="ts">
 	import bearsPaintingNails from '$lib/assets/bears-painting-nails.png';
 	import { browser } from '$app/environment';
+	import { base } from '$app/paths'
 
 	const buttonWidth: number = 60.72;
 	const buttonHeight: number = 42;
@@ -41,7 +42,7 @@
 			<div>
 				<a
 					class="btn variant-filled"
-					href="/yes"
+					href="{base}/yes"
 				>
 					Yes
 				</a>
@@ -49,7 +50,7 @@
 			<div id="no-button">
 				<a
 					class="btn variant-filled"
-					href="/no"
+					href="{base}/no"
 				>
 					{noButtonText}
 				</a>

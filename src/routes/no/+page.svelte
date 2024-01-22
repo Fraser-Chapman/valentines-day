@@ -1,5 +1,6 @@
 <script>
 	import bearCrying from '$lib/assets/sad-bear.gif';
+	import { base } from '$app/paths'
 </script>
 
 <div class="container h-full mx-auto flex justify-center items-center">
@@ -11,7 +12,7 @@
 		<div>
 			<a
 				class="btn variant-filled"
-				href="/"
+				href="{base}/"
 			>
 				Try again? Pls
 			</a>
