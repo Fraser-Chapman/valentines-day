@@ -22,6 +22,9 @@
 						- 14:30 Mini Golf @ Urban Playground
 					</li>
 					<li>
+						- 15:30 Bowling @ Lane 7
+					</li>
+					<li>
 						- 17:30 Maki & Ramen
 					</li>
 					<li>
